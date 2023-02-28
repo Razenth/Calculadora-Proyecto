@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Digital</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    
 </head>
 <body>
 
@@ -14,32 +14,32 @@
         <div class="container">
 
             <div class="mostrar" id="mostrar">
-                ON
+                
             </div>
 
             <div class="introducir">
-                <div class="n1" id="n1"></div>
-                <div class="operador" id="operador">+</div>
-                <div class="n2" id="n2"></div>
+                <input class="n1" id="n1">
+                <div class="operador" id="simbolo"></div>
+                <input class="n2" id="n2">
             </div>
 
             <div class="botones">
-                <button id="siete">7</button>
-                <button id="ocho">8</button>
-                <button id="nueve">9</button>
-                <button id="mas">+</button>
-                <button id="cuatro">4</button>
-                <button id="cinco">5</button>
-                <button id="seis">6</button>
-                <button id="menos">-</button>
-                <button id="uno">1</button>
-                <button id="dos">2</button>
-                <button id="tres">3</button>
-                <button id="por">*</button>
-                <button id="cero">0</button>
-                <button id="igual">=</button>
-                <button id="apagar">AC</button>
-                <button id="dividir">/</button>
+                <button id="btn_siete">7</button>
+                <button id="btn_ocho">8</button>
+                <button id="btn_nueve">9</button>
+                <button id="btn_mas" onclick="operador('+')">+</button>
+                <button id="btn_cuatro">4</button>
+                <button id="btn_cinco">5</button>
+                <button id="btn_seis">6</button>
+                <button id="btn_menos"onclick="operador('-')">-</button>
+                <button id="btn_uno">1</button>
+                <button id="btn_dos">2</button>
+                <button id="btn_tres">3</button>
+                <button id="btn_por"onclick="operador('*')">*</button>
+                <button id="btn_cero">0</button>
+                <button id="btn_igual" onclick="mostrar()">=</button>
+                <button id="btn_apagar" onclick="operador('AC')">AC</button>
+                <button id="btn_dividir"onclick="operador('/')">/</button>
             </div>
 
 
@@ -47,4 +47,5 @@
     </main>
     
 </body>
+<script src="./main.js"></script>
 </html>

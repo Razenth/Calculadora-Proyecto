@@ -47,10 +47,13 @@ main{
 }
 
 .n1,.n2{
+    display: flex;
+    font-size: 20px;
     border: 1px solid white;
     border-radius: 5px;
     height: 50px;
     width: 50px;
+    align-items: center;
 }
 
 .operador{
