@@ -46,14 +46,15 @@ main{
     width: 100%;
 }
 
-.n1,.n2{
+.n1{
     display: flex;
     font-size: 20px;
     border: 1px solid white;
     border-radius: 5px;
     height: 50px;
-    width: 50px;
-    align-items: center;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
 }
 
 .operador{

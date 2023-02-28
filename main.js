@@ -19,35 +19,50 @@ let divir=document.getElementById('btn_divir')
 let off=document.getElementById('btn_apagar')
 let igual=document.getElementById('btn_igual')
 let resultado=''
+let valor1=0
 
 function mostrar(){
+    resultado=parseInt(valor1) * parseInt(n1.value)
     result.innerText=resultado
+    n1.value=''
+    simbolo.innerText=''
 }
 
 function operador(operando){
     switch(operando){
         case '+':
-            resultado=+n1.value + +n2.value
+            valor1=0
+            valor1=n1.value
             simbolo.innerText='+'
             console.log(resultado)
+            n1.value=''
             break
 
         case '-':
-            resultado=+n1.value - +n2.value
+            valor1=0
+            valor1=n1.value
+            resultado=parseInt(valor1) - parseInt(n1.value)
             simbolo.innerText='-'
             console.log(resultado)
+            n1.value=''
             break
 
         case '*':
-            resultado=parseInt(n1.value) * parseInt(n2.value)
+            valor1=0
+            valor1+=n1.value
+            resultado=parseInt(valor1) * parseInt(n1.value)
             simbolo.innerText='*'
             console.log(resultado)
+            n1.value=''
             break
 
         case '/':
-            resultado=+n1.value / +n2.value
+            valor1=0
+            valor1=n1.value
+            resultado=parseInt(valor1) / parseInt(n1.value)
             simbolo.innerText='/'
             console.log(resultado)
+            n1.value=''
             break
 
         case 'AC':
