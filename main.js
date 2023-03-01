@@ -22,7 +22,6 @@ let resultado=''
 let valor1=0
 
 function mostrar(){
-    resultado=parseInt(valor1) * parseInt(n1.value)
     result.innerText=resultado
     n1.value=''
     simbolo.innerText=''
@@ -30,22 +29,24 @@ function mostrar(){
 
 function operador(operando){
     switch(operando){
+
         case '+':
             valor1=0
-            valor1=n1.value
+            valor1+=n1.value
+            resultado=parseInt(valor1) + parseInt(n1.value)     
             simbolo.innerText='+'
             console.log(resultado)
             n1.value=''
-            break
+            break;
 
         case '-':
             valor1=0
-            valor1=n1.value
+            valor1+=n1.value
             resultado=parseInt(valor1) - parseInt(n1.value)
             simbolo.innerText='-'
             console.log(resultado)
             n1.value=''
-            break
+            break;
 
         case '*':
             valor1=0
@@ -54,22 +55,21 @@ function operador(operando){
             simbolo.innerText='*'
             console.log(resultado)
             n1.value=''
-            break
+            break;
 
         case '/':
             valor1=0
-            valor1=n1.value
+            valor1+=n1.value
             resultado=parseInt(valor1) / parseInt(n1.value)
             simbolo.innerText='/'
             console.log(resultado)
             n1.value=''
-            break
+            break;
 
         case 'AC':
             resultado=''
             simbolo.innerHTML=''
             n1.value=''
-            n2.value=''
             mostrar()
 }
 }
