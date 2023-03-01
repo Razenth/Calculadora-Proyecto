@@ -22,9 +22,40 @@ let resultado=''
 let valor1=0
 
 function mostrar(){
-    result.innerText=resultado
-    n1.value=''
-    simbolo.innerText=''
+    if(simbolo.innerHTML=='+'){
+        resultado=parseInt(valor1) + parseInt(n1.value)
+        result.innerText=resultado
+        n1.value=''
+        simbolo.innerText=''
+    }
+
+    else if(simbolo.innerHTML=='-'){
+        resultado=parseInt(valor1) - parseInt(n1.value)
+        result.innerText=resultado
+        n1.value=''
+        simbolo.innerText=''
+    }
+
+    else if(simbolo.innerHTML=='*'){
+        resultado=parseInt(valor1) * parseInt(n1.value)
+        result.innerText=resultado
+        n1.value=''
+        simbolo.innerText=''
+    }
+
+    else if(simbolo.innerHTML=='/'){
+        resultado=parseInt(valor1) / parseInt(n1.value)
+        result.innerText=resultado
+        n1.value=''
+        simbolo.innerText=''
+    }
+
+    else{
+        n1.value=''
+        simbolo.innerText=''
+        result.innerHTML=''
+    }
+
 }
 
 function operador(operando){
@@ -33,36 +64,28 @@ function operador(operando){
         case '+':
             valor1=0
             valor1+=n1.value
-            resultado=parseInt(valor1) + parseInt(n1.value)     
             simbolo.innerText='+'
-            console.log(resultado)
             n1.value=''
             break;
 
         case '-':
             valor1=0
             valor1+=n1.value
-            resultado=parseInt(valor1) - parseInt(n1.value)
             simbolo.innerText='-'
-            console.log(resultado)
             n1.value=''
             break;
 
         case '*':
             valor1=0
             valor1+=n1.value
-            resultado=parseInt(valor1) * parseInt(n1.value)
             simbolo.innerText='*'
-            console.log(resultado)
             n1.value=''
             break;
 
         case '/':
             valor1=0
             valor1+=n1.value
-            resultado=parseInt(valor1) / parseInt(n1.value)
             simbolo.innerText='/'
-            console.log(resultado)
             n1.value=''
             break;
 
@@ -70,8 +93,7 @@ function operador(operando){
             resultado=''
             simbolo.innerHTML=''
             n1.value=''
+            valor1=''
             mostrar()
 }
 }
-
-

@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
 }
 
 main{
@@ -41,6 +49,7 @@ main{
 .introducir{
     display: flex;
     margin: 10px;
+    margin-top: 30px;
     justify-content: center;
     height: 50px;
     width: 100%;
@@ -71,7 +80,7 @@ main{
     border-radius: 5px;
     width: 300px;
     height: 300px;
-
+    margin-top: 20px;
 }
 
 .botones button{
@@ -83,6 +92,7 @@ main{
     height: 50px;
     width: 50px;
     margin: 10px;
+    font-size: 20px;
 }
 
 button:active{
