@@ -21,6 +21,7 @@
 
 
 mostrar=document.getElementById('mostrar')
+document.onkeydown=teclas
 
 let NumPantalla='0'
 let InicioNum=1
@@ -60,6 +61,56 @@ function igual(){
     }
 }
 
+function borrar(){
+    
+}
+
+function borrarTodo(){
+    mostrar.innerHTML='0'
+    NumPantalla='0'
+    numeroEspera=0
+    opeCurso='ño'
+}
+
+function teclas (enEvento) { 
+    evento = enEvento
+    tecla=evento.keyCode
+    if (tecla>47 && tecla<58) { 
+       buscarNum=tecla-48
+       buscarNum=String(buscarNum)
+       numero(buscarNum)
+       }
+    if (tecla>95 && tecla<106) {
+       buscarNum=tecla-96
+       buscarNum=String(buscarNum)
+       numero(buscarNum)
+       }
+    if (tecla==106){
+        operador('*')
+    }
+
+    if (tecla==107){
+        operador('+')
+    }
+
+    if (tecla==109){
+        operador('-')
+    } 
+
+    if (tecla==111){
+        operador('/')
+    }
+    
+    if (tecla==31 || tecla==13){
+        igual()
+    }
+    if (tecla==46 || tecla==27){
+        borrarTodo()
+    }
+    if (tecla==8){
+        borrar()
+    }
+    }
 
 
 

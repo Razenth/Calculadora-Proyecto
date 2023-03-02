@@ -95,7 +95,36 @@ main{
     font-size: 20px;
 }
 
+#btn_igual{
+    width: 125px;
+}
+
 button:active{
     background-color: white;
     color: black;
 }
+
+.borradores{
+    display: flex;
+    justify-content:center ;
+    width: 300px;
+}
+
+.btn_borrar, #btn_eliminar{
+    height: 50px;
+    width: 80px;
+    margin: 10px;
+    background-color: black;
+    border-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    font-size: 20px;
+}
+
+.btn_borrar:active, #btn_eliminar:active{
+    background-color: red;
+    color: black;
+    border: 1px solid black;
+
+} 
