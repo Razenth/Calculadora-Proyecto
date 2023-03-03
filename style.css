@@ -7,9 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(127,255,212,1) 50%, rgba(0,0,0,1) 87%);
+
 }
 
 main{
@@ -25,9 +26,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid;
-    background-color: black;
-    border-radius: 5px;
+    border: 5px solid aquamarine;
+    border-style:double;
+    background-color:rgb(36, 36, 36);
+    border-radius: 20px;
     height: 500px;
     width: 400px;
     padding: 20px;
@@ -37,13 +39,14 @@ main{
     display: flex;
     justify-content: end;
     align-items: center;
-    border: 1px solid white;
-    background-color: white;
+    border: 3px solid rgb(127, 255, 212);
+    background-color:rgb(36, 36, 36);
     font-size: 25px;
-    color: black;
+    color: aquamarine;
     border-radius: 5px;
     height: 50px;
     width: 100%;
+    padding: 10px;
 }
 
 .introducir{
@@ -54,18 +57,6 @@ main{
     height: 50px;
     width: 100%;
 }
-
-.n1{
-    display: flex;
-    font-size: 20px;
-    border: 1px solid white;
-    border-radius: 5px;
-    height: 50px;
-    width: 100px;
-    justify-content: center;
-    text-align: center;
-}
-
 .operador{
     display: flex;
     color: white;
@@ -76,32 +67,33 @@ main{
 }
 
 .botones{
-    border: 1px solid white;
+    border: 2px solid aquamarine;
     border-radius: 5px;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     margin-top: 20px;
 }
 
 .botones button{
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     border-style: none;
-    border: 1px solid white;
+    border: 2px solid aquamarine;
     border-radius: 2px;
-    color: white;
+    color: aquamarine;
     height: 50px;
-    width: 50px;
-    margin: 10px;
+    width: 60px;
+    margin: 7px;
+    margin-bottom: 20px;
     font-size: 20px;
 }
 
 #btn_igual{
-    width: 125px;
+    width: 140px;
 }
 
 button:active{
-    background-color: white;
-    color: black;
+    background-color: aquamarine;
+    color: rgb(36, 36, 36);
 }
 
 .borradores{
@@ -114,17 +106,15 @@ button:active{
     height: 50px;
     width: 80px;
     margin: 10px;
-    background-color: black;
+    background-color:rgb(36, 36, 36);
     border-style: none;
-    border: 1px solid red;
+    border: 2px solid aquamarine;
     border-radius: 5px;
-    color: red;
+    color: aquamarine;
     font-size: 20px;
 }
 
 .btn_borrar:active, #btn_eliminar:active{
-    background-color: red;
-    color: black;
-    border: 1px solid black;
-
+    background-color: aquamarine;
+    color: rgb(36, 36, 36);
 } 
